@@ -18,16 +18,17 @@ mkdir /etc/snell
 
 ### 5.2或者自己编写一个
     vim /etc/snell/snell-server.conf
-
+```bash
 [snell-server]
 listen = 0.0.0.0:11807
 psk = AijHCeos15IvqDZTb1cJMX5GcgZzIVE
 ipv6 = false
+```
 
-然后配置 Systemd 服务文件：
-sudo vim /lib/systemd/system/snell.service
-将下面的复制粘贴进去，按esc 后输入“：wq”保存退出
-
+## 6.配置 Systemd 服务文件
+    vim /lib/systemd/system/snell.service
+### 6.1将下面的复制粘贴进去，按esc 后输入“：wq”保存退出
+```bash
 [Unit]
 Description=Snell Proxy Service
 After=network.target
@@ -45,9 +46,7 @@ SyslogIdentifier=snell-server
 
 [Install]
 WantedBy=multi-user.target
-⚠️ 注意：在一些 Linux 发行版 (CentOS7) 中并无 nogroup 群组，但可以尝试修改成 Group=nobody 解决。如果需要使用特权端口，可以在 [Service] 增加一条：AmbientCapabilities=CAP_NET_BIND_SERVICE 以解决权限不足不能绑定的问题；
-
-然后使用命令：
+```
 
 重载服务
 sudo systemctl daemon-reload
