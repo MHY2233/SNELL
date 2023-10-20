@@ -19,14 +19,10 @@ mkdir /etc/snell
 ### 5.2或者自己编写一个
     vim /etc/snell/snell-server.conf
 
-将下面的复制粘贴进去，按esc 后输入"：wq"保存退出
-Tips 如果要进行修改，按“i”后移动光标到相应位置，进行修改完毕后按esc退出并输入“：wq”保存（这个说明给像我这样对vim不熟悉的）
 [snell-server]
 listen = 0.0.0.0:11807
 psk = AijHCeos15IvqDZTb1cJMX5GcgZzIVE
 ipv6 = false
-参数说明：
-listen：监听地址及端口； psk：密钥； ipv6：如果需要 IPv6 支持将值为 – true；
 
 然后配置 Systemd 服务文件：
 sudo vim /lib/systemd/system/snell.service
