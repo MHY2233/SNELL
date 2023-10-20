@@ -48,26 +48,14 @@ SyslogIdentifier=snell-server
 WantedBy=multi-user.target
 ```
 
-重载服务
-sudo systemctl daemon-reload
-开机运行 Snell
-sudo systemctl enable snell
-开启 Snell
-sudo systemctl start snell
-关闭 Snell
-sudo systemctl stop snell
-查看 Snell 状态
+## 7.重载服务
+    systemctl daemon-reload
+## 8.开机运行 Snell
+    systemctl enable snell
+## 9.开启 Snell
+    systemctl start snell
+## 10.关闭Snell
+    systemctl stop snell
+## 11.查看 Snell 状态
+    systemctl status snell
 
-sudo systemctl status snell
-Tips:运行查看服务器状态后按“q”键退出
-如果要查看自己Snell配置：
-
-cat /etc/snell/snell-server.conf
-查看后将相应的配置输出到surge里面：
-
-格式如下：（XXX.XXX.XXX.XXX换成你自己的vps IP，端口和psk也是自己改成自己设置的snell-server.conf里面相应数据。）
-
-AWS-EC2-SG = snell, XXX.XXX.XXX.XXX, 11807, psk=AijHCeos15IvqDZTb1cJMX5GcgZzIVE, version=4, tfo=true
-中午我是自己在 AWS -EC2 上按照这个步骤自己来了一遍并通了的。
-
-如果你看完教程觉得好麻烦啊我不想动手搞，那么这个一键脚本应该可以帮到你
