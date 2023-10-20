@@ -1,28 +1,15 @@
 ## 1.更新系统
     apt update && apt -y install vim && apt install unzip
-DNF
-这一步ubuntu和Debian系统似乎不用。
-sudo dnf install unzip
-安装vim
-apt install vim
-下载 Snell Server
-如果你的服务器是其它版本的去官网Snell Protocol · GitBook下载相应服务器版本。这里以linux-amd64为例
-wget https://dl.nssurge.com/snell/snell-server-v4.0.1-linux-amd64.zip
-如果ARM的机器：
 
-wget https://dl.nssurge.com/snell/snell-server-v4.0.1-linux-aarch64.zip
+## 2.下载 Snell Server
+    wget https://dl.nssurge.com/snell/snell-server-v4.0.1-linux-amd64.zip
 
-解压 Snell Server 到指定目录
-AMD
+## 3.解压 Snell Server 到指定目录
+    unzip snell-server-v4.0.1-linux-amd64.zip -d /usr/local/bin/
 
-sudo unzip snell-server-v4.0.1-linux-amd64.zip -d /usr/local/bin
-ARM
-
-sudo unzip snell-server-v4.0.1-linux-aarch64.zip -d /usr/local/bin
-赋予服务器权限
-花姐的教程里面没有这一步。但是我结合自己之前弄TUIC的经验，觉得应该还是要加上
-chmod +x /usr/local/bin/snell-server
-编写配置文件：
+## 4.赋予服务器权限
+    chmod +x /usr/local/bin/snell-server
+## 5.编写配置文件：
 先执行新建文件夹操作
 sudo mkdir /etc/snell
 
