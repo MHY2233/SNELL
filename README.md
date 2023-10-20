@@ -1,9 +1,4 @@
-用ssh连上你的vps后，输入：
-sudo -i
-获取管理权限
 
-如果系统没有预装可能需要先下载安装 vim，wget 及 unzip
-APT
 sudo apt update && sudo apt install wget unzip
 DNF
 这一步ubuntu和Debian系统似乎不用。
