@@ -20,7 +20,7 @@ mkdir /etc/snell
     vim /etc/snell/snell-server.conf
 ```bash
 [snell-server]
-listen = 0.0.0.0:11807
+listen = 0.0.0.0:12321
 psk = AijHCeos15IvqDZTb1cJMX5GcgZzIVE
 ipv6 = false
 ```
