@@ -10,13 +10,14 @@
 ## 4.赋予服务器权限
     chmod +x /usr/local/bin/snell-server
 ## 5.编写配置文件：
-先执行新建文件夹操作
-mkdir /etc/snell
 
-### 5.1可以使用 Snell 的 wizard 生成一个配置文件
+### 5.1先执行新建文件夹操作
+    mkdir /etc/snell
+
+#### 5.1.2可以使用 Snell 的 wizard 生成一个配置文件
     snell-server --wizard -c /etc/snell/snell-server.conf
 
-### 5.2或者自己编写一个
+#### 5.1.3或者自己编写一个
     vim /etc/snell/snell-server.conf
 ```bash
 [snell-server]
