@@ -1,5 +1,5 @@
-
-sudo apt update && sudo apt install wget unzip
+## 1.更新系统
+    apt update && apt -y install vim && apt install unzip
 DNF
 这一步ubuntu和Debian系统似乎不用。
 sudo dnf install unzip
