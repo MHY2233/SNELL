@@ -25,6 +25,7 @@
 [snell-server]
 listen = 0.0.0.0:12321
 psk = AijHCeos15IvqDZTb1cJMX5GcgZzIVE
+obfs = http
 ipv6 = false
 ```
 
