@@ -1,5 +1,7 @@
-## 1.更新系统
-    apt update && apt -y install vim && apt install unzip
+## 1.安装工具
+    apt update 
+    apt -y install vim 
+    apt install unzip
 
 ## 2.下载 Snell Server
     wget https://dl.nssurge.com/snell/snell-server-v4.0.1-linux-amd64.zip
