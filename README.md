@@ -1,7 +1,7 @@
 # 手动配置
 ## 1.安装工具
     apt update 
-    apt -y install vim 
+    apt install vim -y
     apt install unzip
 
 ## 2.下载 Snell Server
