@@ -1,3 +1,7 @@
+# 一键脚本
+
+
+# 手动配置
 ## 1.安装工具
     apt update 
     apt -y install vim 
