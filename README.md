@@ -18,7 +18,7 @@
     mkdir /etc/snell
 
 #### 5.1.1 可以直接下载配置(方式一)
-    curl -Lo /etc/snell/snell-server.conf https://raw.githubusercontent.com/MHY2233/snell-install/main/snell-server.conf_server.json
+    curl -Lo /etc/snell/snell-server.conf https://raw.githubusercontent.com/MHY2233/snell-install/main/snell-server.conf
 
 #### 5.1.2可以使用 Snell 的 wizard 生成一个配置文件(方式二)
     snell-server --wizard -c /etc/snell/snell-server.conf
