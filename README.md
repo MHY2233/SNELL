@@ -74,6 +74,4 @@ WantedBy=multi-user.target
 ## 11.查看 Snell 状态
     systemctl status snell
 
-# 一键脚本
-    bash -c "$(curl -sL https://raw.githubusercontent.com/MHY2233/snell-install/main/snell.sh)"
 
