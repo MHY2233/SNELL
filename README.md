@@ -15,6 +15,6 @@
 ## 8.查看 Snell 状态
     systemctl status snell
 ## 9.删除安装包
-    rm snell-server-v4.0.1-linux-amd64.zip
+    rm ~/snell-server-v4.0.1-linux-amd64.zip
 
 
