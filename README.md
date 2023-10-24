@@ -17,6 +17,9 @@
 ### 5.1先执行新建文件夹操作
     mkdir /etc/snell
 
+#### 5.1.1 可以直接下载配置
+    curl -Lo /etc/snell/snell-server.conf https://raw.githubusercontent.com/MHY2233/snell-install/main/snell-server.conf_server.json
+
 #### 5.1.2可以使用 Snell 的 wizard 生成一个配置文件
     snell-server --wizard -c /etc/snell/snell-server.conf
 
