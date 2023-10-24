@@ -38,11 +38,11 @@ ipv6 = false
 ### 6.1下载service文件
     curl -Lo /etc/systemd/system/snell.service https://raw.githubusercontent.com/MHY2233/snell-install/main/snell.service && systemctl daemon-reload
     
-### 6.2手动配置service文件
+### 6.2或者手动配置service文件
 
     vim /lib/systemd/system/snell.service
 
-### 6.1将下面的复制粘贴进去，按esc 后输入“：wq”保存退出
+### 将下面的复制粘贴进去，按esc 后输入“：wq”保存退出
 ```bash
 [Unit]
 Description=Snell Proxy Service
