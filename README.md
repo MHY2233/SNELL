@@ -1,6 +1,3 @@
-# 一键脚本
-
-
 # 手动配置
 ## 1.安装工具
     apt update 
@@ -66,4 +63,7 @@ WantedBy=multi-user.target
     systemctl stop snell
 ## 11.查看 Snell 状态
     systemctl status snell
+
+# 一键脚本
+    bash -c "$(curl -sL https://raw.githubusercontent.com/MHY2233/snell-install/main/snell.sh)"
 
