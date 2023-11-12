@@ -19,7 +19,23 @@
     vim /etc/systemd/system/snell.service
 
 #### 写入下面内容
+    [Unit]
+    Description=Snell Proxy Service
+    After=network.target
 
+    [Service]
+    Type=simple
+    User=root
+    Group=nogroup
+    LimitNOFILE=32768
+    ExecStart=/usr/local/bin/snell-server -c /etc/snell/snell-server.conf
+        AmbientCapabilities=CAP_NET_BIND_SERVICE
+    StandardOutput=syslog
+    StandardError=syslog
+    SyslogIdentifier=snell-server
+
+[Install]
+WantedBy=multi-user.target
 ## 6.开启 snell 服务
     systemctl start snell
 ## 7.设置 snell 开机启动
