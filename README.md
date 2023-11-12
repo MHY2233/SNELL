@@ -4,8 +4,10 @@
     unzip snell-server-v4.0.1-linux-amd64.zip -d /usr/local/bin/
 ### 3.赋予服务器权限
     chmod +x /usr/local/bin/snell-server
-## 4.下载配置文件：
-    mkdir /etc/snell && curl -Lo /etc/snell/snell-server.conf https://raw.githubusercontent.com/MHY2233/snell-install/main/snell-server.conf
+### 4.创建配置文件
+    mkdir /etc/snell
+
+    vim /etc/snell/
 ## 5.下载 systemctl 文件
     curl -Lo /etc/systemd/system/snell.service https://raw.githubusercontent.com/MHY2233/snell-install/main/snell.service && systemctl daemon-reload
 ## 6.开启 snell 服务
