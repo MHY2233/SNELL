@@ -7,7 +7,9 @@
 ### 4.创建配置文件
     mkdir /etc/snell
 
-    vim /etc/snell/
+    vim /etc/snell/snell-server.conf
+
+#### 写入下面内容
 ## 5.下载 systemctl 文件
     curl -Lo /etc/systemd/system/snell.service https://raw.githubusercontent.com/MHY2233/snell-install/main/snell.service && systemctl daemon-reload
 ## 6.开启 snell 服务
