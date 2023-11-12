@@ -34,8 +34,8 @@
     StandardError=syslog
     SyslogIdentifier=snell-server
 
-[Install]
-WantedBy=multi-user.target
+    [Install]
+    WantedBy=multi-user.target
 ## 6.开启 snell 服务
     systemctl start snell
 ## 7.设置 snell 开机启动
