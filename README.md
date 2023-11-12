@@ -36,13 +36,13 @@
 
     [Install]
     WantedBy=multi-user.target
-## 6.开启 snell 服务
+### 6.开启 snell 服务
     systemctl start snell
-## 7.设置 snell 开机启动
+### 7.设置 snell 开机启动
     systemctl enable snell
-## 8.查看 Snell 状态
+### 8.查看 Snell 状态
     systemctl status snell
-## 9.删除安装包
+### 9.删除安装包
     rm ~/snell-server-v4.0.1-linux-amd64.zip
 
 
