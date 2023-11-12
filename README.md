@@ -10,8 +10,16 @@
     vim /etc/snell/snell-server.conf
 
 #### 写入下面内容
-## 5.下载 systemctl 文件
-    curl -Lo /etc/systemd/system/snell.service https://raw.githubusercontent.com/MHY2233/snell-install/main/snell.service && systemctl daemon-reload
+    [snell-server]
+    listen = 0.0.0.0:12321
+    psk = thezuiniubidepassword
+    obfs = http
+    ipv6 = true
+### 5.配置systemctl 文件
+    vim /etc/systemd/system/snell.service
+
+#### 写入下面内容
+
 ## 6.开启 snell 服务
     systemctl start snell
 ## 7.设置 snell 开机启动
