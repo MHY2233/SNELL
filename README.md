@@ -29,7 +29,7 @@
     Group=nogroup
     LimitNOFILE=32768
     ExecStart=/usr/local/bin/snell-server -c /etc/snell/snell-server.conf
-        AmbientCapabilities=CAP_NET_BIND_SERVICE
+    AmbientCapabilities=CAP_NET_BIND_SERVICE
     StandardOutput=syslog
     StandardError=syslog
     SyslogIdentifier=snell-server
