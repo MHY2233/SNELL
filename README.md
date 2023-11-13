@@ -13,7 +13,7 @@
     [snell-server]
     listen = 0.0.0.0:12321
     psk = thezuiniubidepassword
-    obfs = http
+    Obfs = http
     ipv6 = true
 ### 5.配置systemctl 文件
     vim /etc/systemd/system/snell.service
