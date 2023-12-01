@@ -49,5 +49,5 @@ WantedBy=multi-user.target
 ### 9.删除安装包
     rm ~/snell-server-v4.0.1-linux-amd64.zip
 
-|markdown语法|预览效果|
----------------------
+| markdown语法 | 预览效果 |
+-------------------------
