@@ -18,7 +18,8 @@
 ```bash
 [snell-server]
 listen = 0.0.0.0:12321
-psk = thezuiniubidepassword
+psk = a1T48yGmETVZytQGBoec
+ipv6 = false
 ```
 - **5.配置systemctl 文件**
 
