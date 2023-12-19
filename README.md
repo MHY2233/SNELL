@@ -19,8 +19,6 @@
 [snell-server]
 listen = 0.0.0.0:12321
 psk = thezuiniubidepassword
-Obfs = http
-ipv6 = true
 ```
 - **5.配置systemctl 文件**
 
