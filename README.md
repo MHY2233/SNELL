@@ -4,7 +4,7 @@
 
 - **2.解压 Snell Server 到指定目录**
 
-        unzip snell-server-v4.0.1-linux-amd64.zip -d /usr/local/bin/
+        unzip snell-server-v4.0.1-linux-amd64.zip -d /usr/local/bin/ && rm ~/snell-server-v4.0.1-linux-amd64.zip
 
 - **3.赋予服务器权限**
 
@@ -23,7 +23,7 @@ ipv6 = false
 ```
 - **5.配置systemctl 文件**
 
-        vim /etc/systemd/system/snell.service
+        vim /etc/systemd/system/snell-server.service
 
 **写入下面内容**
 ```bash
@@ -47,15 +47,8 @@ WantedBy=multi-user.target
 ```
 - **6.开启 snell 服务**
 
-        systemctl start snell
+        systemctl enable --now snell-server
 
-- **7.设置 snell 开机启动**
-
-        systemctl enable snell
-- **8.查看 Snell 状态**
+- **7.查看 Snell 运行状态**
 
         systemctl status snell
-
-- **9.删除安装包**
-
-        rm ~/snell-server-v4.0.1-linux-amd64.zip
