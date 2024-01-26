@@ -51,4 +51,4 @@ WantedBy=multi-user.target
 
 - **7. 查看 Snell 运行状态**
 
-        systemctl status snell
+        systemctl status snell-server
